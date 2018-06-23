@@ -18,7 +18,11 @@ a:hover {
   border-radius: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  /* padding-top: 11px; */
+  letter-spacing: 2px;
+}
+
+.opal-solid {
+  padding-top: 11px;
 }
 
 .opal:before {
@@ -29,18 +33,18 @@ a:hover {
   top: -50%;
   left: -50%;
   z-index: -1;
-  /* background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
-    linear-gradient(90deg, orange, red, yellow); */
+  background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
+    linear-gradient(90deg, orange, red, yellow);
   /* -webkit-transform: rotate(30deg);
   transform: rotate(30deg); */
-  /* -webkit-animation: pan 3s infinite;
+  -webkit-animation: pan 3s infinite;
   animation: pan 3s infinite;
-  animation-direction: alternate; */
-  background: linear-gradient(135deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+  animation-direction: alternate;
+  /* background: linear-gradient(135deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
     linear-gradient(90deg, black, green 80%, black 80%, green);
   -webkit-animation: success 1s infinite;
   animation: success 1s infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 .opal-inner {
@@ -51,14 +55,14 @@ a:hover {
   /* border-color: #ffffff80;
   border-width: 5px;*/
   border-radius: 10px;
-  background-color: #ffffff30;
-  padding-top: 6px;
+  background-color: #ffffff50;
+  padding-top: 5px;
 }
 
 .opal:hover:before {
-  /* -webkit-animation: pan 1s infinite;
+  -webkit-animation: pan 1s infinite;
   animation: pan 1s infinite;
-  animation-direction: alternate; */
+  animation-direction: alternate;
 }
 
 .opal:active:before {
@@ -71,6 +75,18 @@ a:hover {
   text-decoration: none !important;
 }
 
+.active:before {
+  -webkit-animation: success 1s infinite;
+  animation: success 1s infinite;
+  animation-direction: alternate;
+}
+
+.active:hover:before {
+  -webkit-animation: success 1s infinite;
+  animation: success 1s infinite;
+  animation-direction: alternate;
+}
+
 @keyframes pan {
   to {
     transform: rotate(90deg);
@@ -78,7 +94,39 @@ a:hover {
 }
 
 @keyframes success {
+  from {
+    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+    linear-gradient(90deg, black, green 80%, black 80%, green);
+  }
   to {
     transform: rotate(30deg);
+    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+    linear-gradient(90deg, black, green 80%, black 80%, green);
+  }
+}
+
+@keyframes settle {
+
+}
+
+@keyframes color-fade-out {
+  from {
+    background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
+    linear-gradient(90deg, orange, red, yellow);
+    opacity: 100%;
+  }
+  to {
+    opacity: 20%;
+  }
+}
+
+@keyframes color-fade-in {
+  from {
+    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+    linear-gradient(90deg, black, green 80%, black 80%, green);
+    opacity: 20%;
+  }
+  to {
+    opacity: 100%;
   }
 }
