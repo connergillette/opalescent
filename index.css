@@ -16,6 +16,9 @@ a:hover {
   color: #ffffff;
   font-size: 48px;
   border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* padding-top: 11px; */
 }
 
 .opal:before {
@@ -26,11 +29,17 @@ a:hover {
   top: -50%;
   left: -50%;
   z-index: -1;
-  background: linear-gradient(135deg, #ff000050 19%,#0000ff80 50%, #ff000050), linear-gradient(90deg,orange, red, yellow);
+  /* background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
+    linear-gradient(90deg, orange, red, yellow); */
   /* -webkit-transform: rotate(30deg);
   transform: rotate(30deg); */
-  -webkit-animation: pan 3s infinite;
+  /* -webkit-animation: pan 3s infinite;
   animation: pan 3s infinite;
+  animation-direction: alternate; */
+  background: linear-gradient(135deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+    linear-gradient(90deg, black, green 80%, black 80%, green);
+  -webkit-animation: success 1s infinite;
+  animation: success 1s infinite;
   animation-direction: alternate;
 }
 
@@ -41,11 +50,21 @@ a:hover {
   /* border-style: transparent; */
   /* border-color: #ffffff80;
   border-width: 5px;*/
-  border-radius: 10px; 
-  background-color: #ffffff50;
+  border-radius: 10px;
+  background-color: #ffffff30;
   padding-top: 6px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+}
+
+.opal:hover:before {
+  /* -webkit-animation: pan 1s infinite;
+  animation: pan 1s infinite;
+  animation-direction: alternate; */
+}
+
+.opal:active:before {
+  /* -webkit-animation: success 1s infinite;
+  animation: success 1s infinite;
+  animation-direction: alternate; */
 }
 
 a:hover {
@@ -53,7 +72,13 @@ a:hover {
 }
 
 @keyframes pan {
-  to{
+  to {
     transform: rotate(90deg);
+  }
+}
+
+@keyframes success {
+  to {
+    transform: rotate(30deg);
   }
 }
