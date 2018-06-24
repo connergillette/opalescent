@@ -1,21 +1,20 @@
-/* body {
-  background-color: black !important;
-} */
-
 .container {
   margin-top: 100px;
 }
 
 .row {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 a:hover {
   text-decoration: none;
+  opacity: 0;
+  box-shadow: none;
 }
 
 .opal {
   position: relative;
+  display: inline-block;
   overflow: hidden;
   height: 40px;
   min-width: 80px;
@@ -25,11 +24,50 @@ a:hover {
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  /* letter-spacing: 2px; */
+  opacity: 1;
+  /* -webkit-transition: opacity .3s;
+  transition: opacity .3s; */
+}
+
+.shadow-test {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-test::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-test:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.shadow-test:hover::after {
+  opacity: 1;
 }
 
 .opal-solid {
   padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .opal:before {
@@ -42,23 +80,29 @@ a:hover {
   top: -200px;
   background: linear-gradient(135deg, #ff0000b0 19%, #0000ff80 80%, #00a2ff50 90%) no-repeat;
   
-  -webkit-animation: pan360 10s infinite, sway 8s infinite;
-  
-  animation: pan360 10s infinite, sway 8s infinite;
+  -webkit-animation: pan360 5s infinite, sway 8s infinite;
+  animation: pan360 5s infinite, sway 8s infinite;
   animation-timing-function: linear;
-  opacity: 1;
   /* background-color: none; */
-  -webkit-transition: opacity .6s;
-  transition: opacity .6s;
+  /* -webkit-transition: opacity .3s;
+  transition: opacity .3s; */
+}
+
+.opal-light {
+  color: rgb(24, 24, 24);
+}
+
+.opal-outline {
+  border-color: rgb(167, 167, 167);
+  border-style: solid;
 }
 
 .opal-rainbow:before {
   background: linear-gradient(to bottom right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 19%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%), 
     linear-gradient(to top right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 25%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%);
-  -webkit-animation: pan360 10s infinite;
-  animation: pan360 10s infinite, sway 8s infinite;
+  /* animation: pan360 10s infinite, sway 8s infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
 .opal-rainbow2:before {
@@ -71,30 +115,62 @@ a:hover {
   background: linear-gradient(to bottom right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0)), linear-gradient(to top right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0));
 }  
 
+.opal-dark:before {
+  background: linear-gradient(to bottom right, black, rgb(43, 0, 43), rgb(49, 49, 49), black);
+}
+
+.opal-light:before {
+  background: linear-gradient(to bottom right, rgb(255, 189, 65), rgb(255, 255, 41), rgb(90, 255, 255), rgb(255, 134, 154));
+}
+
+.opal-awake:before {
+  background: white;
+}
+
+.opal-awake:hover:before {
+  background: linear-gradient(to bottom right, rgb(255, 189, 65), rgb(255, 255, 41), rgb(90, 255, 255), rgb(255, 134, 154));
+}
+
 .opal-inner {
-  margin: 4px;
-  height: calc(100% - 8px);
-  width: calc(100% - 8px);
+  margin: 2px;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
   border-radius: 3px;
   background-color: #ffffff50;
   padding-top: 2px;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
 }
 
 .opal-soften {
   height: 100%;
   width: 100%;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   background-color: #ffffff50;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
 }
 
+
 .opal:hover:before {
-  -webkit-animation: pan360 5s infinite;
-  animation: pan360 5s infinite;
+  /* opacity: .5; */
+  -webkit-animation: pan360 2s infinite;
+  animation: pan360 2s infinite;
   animation-timing-function: linear;
 }
 
+.opal .opal-soften:hover {
+  background-color: transparent;
+}
+
+.opal .opal-inner:hover {
+  background-color: transparent;
+}
+
 .opal-rainbow:hover:before {
-  -webkit-animation: pan360 4s infinite;
-  animation: pan360 4s infinite;
+  -webkit-animation: pan360 2s infinite;
+  animation: pan360 2s infinite;
   animation-timing-function: cubic-bezier(.7, 0.84, .9, .75);
 }
 
@@ -153,7 +229,7 @@ a:hover {
 }
 
 @keyframes settle {
-
+  
 }
 
 @keyframes toActive {
