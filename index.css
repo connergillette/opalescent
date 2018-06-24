@@ -1,7 +1,13 @@
-.vert-center {
-  margin-left: 45%;
-  margin-right: 50%;
-  margin-top: 200px;
+/* body {
+  background-color: black !important;
+} */
+
+.container {
+  margin-top: 100px;
+}
+
+.row {
+  padding-bottom: 20px;
 }
 
 a:hover {
@@ -11,64 +17,85 @@ a:hover {
 .opal {
   position: relative;
   overflow: hidden;
-  height: 100px;
-  width: 200px;
+  height: 40px;
+  min-width: 80px;
+  max-width: 200px;
   color: #ffffff;
-  font-size: 48px;
-  border-radius: 15px;
+  font-size: 18px;
+  border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
 .opal-solid {
-  padding-top: 11px;
+  padding-top: 6px;
 }
 
 .opal:before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 400%;
-  top: -50%;
-  left: -50%;
   z-index: -1;
-  background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
-    linear-gradient(90deg, orange, red, yellow);
-  /* -webkit-transform: rotate(30deg);
-  transform: rotate(30deg); */
-  -webkit-animation: pan 3s infinite;
-  animation: pan 3s infinite;
-  animation-direction: alternate;
-  /* background: linear-gradient(135deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
-    linear-gradient(90deg, black, green 80%, black 80%, green);
-  -webkit-animation: success 1s infinite;
-  animation: success 1s infinite;
-  animation-direction: alternate; */
+  width: 400px;
+  height: 400px;
+  left: -50px;
+  top: -200px;
+  background: linear-gradient(135deg, #ff0000b0 19%, #0000ff80 80%, #00a2ff50 90%) no-repeat;
+  
+  -webkit-animation: pan360 10s infinite, sway 8s infinite;
+  
+  animation: pan360 10s infinite, sway 8s infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+  /* background-color: none; */
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
 }
 
+.opal-rainbow:before {
+  background: linear-gradient(to bottom right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 19%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%), 
+    linear-gradient(to top right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 25%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%);
+  -webkit-animation: pan360 10s infinite;
+  animation: pan360 10s infinite, sway 8s infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+.opal-rainbow2:before {
+  background: linear-gradient(to top right, rgb(255, 102, 0), rgba(255, 0, 0, 0.733), rgba(192, 26, 192, 0.984), rgba(50, 0, 205, 0.449), 
+  teal,green,rgba(0,0,255, .5)), linear-gradient(to bottom right, orange, rgba(0,0,255,.6), yellow);
+    /* linear-gradient(to top right, ); */
+}
+
+.opal-bright:before {
+  background: linear-gradient(to bottom right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0)), linear-gradient(to top right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0));
+}  
+
 .opal-inner {
-  margin: 5px;
-  height: calc(100% - 10px);
-  width: calc(100% - 10px);
-  /* border-style: transparent; */
-  /* border-color: #ffffff80;
-  border-width: 5px;*/
-  border-radius: 10px;
+  margin: 4px;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  border-radius: 3px;
   background-color: #ffffff50;
-  padding-top: 5px;
+  padding-top: 2px;
+}
+
+.opal-soften {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff50;
 }
 
 .opal:hover:before {
-  -webkit-animation: pan 1s infinite;
-  animation: pan 1s infinite;
-  animation-direction: alternate;
+  -webkit-animation: pan360 5s infinite;
+  animation: pan360 5s infinite;
+  animation-timing-function: linear;
 }
 
-.opal:active:before {
-  /* -webkit-animation: success 1s infinite;
-  animation: success 1s infinite;
-  animation-direction: alternate; */
+.opal-rainbow:hover:before {
+  -webkit-animation: pan360 4s infinite;
+  animation: pan360 4s infinite;
+  animation-timing-function: cubic-bezier(.7, 0.84, .9, .75);
 }
 
 a:hover {
@@ -76,9 +103,14 @@ a:hover {
 }
 
 .active:before {
-  -webkit-animation: success 1s infinite;
-  animation: success 1s infinite;
-  animation-direction: alternate;
+  /* opacity: .5; */
+  /* background: green; */
+
+  background: linear-gradient(30deg, rgba(50, 205, 50, 0.747),rgba(0, 128, 0, 0.788), rgb(0, 87, 0));
+  -webkit-animation: sway 3s infinite, pan360 3s infinite;
+  animation: sway 3s infinite, pan360 3s infinite;
+  /* animation-direction: alternate; */
+  animation-timing-function: linear;
 }
 
 .active:hover:before {
@@ -93,20 +125,47 @@ a:hover {
   }
 }
 
-@keyframes success {
+@keyframes pan360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sway {
   from {
-    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
-    linear-gradient(90deg, black, green 80%, black 80%, green);
+    top: -200px;
+    left: -50px;
   }
   to {
-    transform: rotate(30deg);
-    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
-    linear-gradient(90deg, black, green 80%, black 80%, green);
+    top: -300px;
+    left: -100px;
+  }
+  to {
+    top: -200px;
+    left: -50px;
+  }
+}
+
+@keyframes success {
+  to {
+    transform: rotate(60deg);
   }
 }
 
 @keyframes settle {
 
+}
+
+@keyframes toActive {
+  from {
+    background: green;
+    opacity: .5;
+  }
+  to {
+    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
+    linear-gradient(90deg, black, green 80%, black 80%, green);
+    opacity: 1;
+  }
 }
 
 @keyframes color-fade-out {
