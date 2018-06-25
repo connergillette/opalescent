@@ -18,7 +18,7 @@
 
 <body>
   <div class="container-fluid">
-    <div class="opal-header opal-rainbow2">
+    <div class="opal-header opal-rainbow-soft">
       <div class="container">
         <div class="row">
           <div class="col-md-9 col-sm-12">
@@ -50,7 +50,7 @@
       <div class="offset-md-3 col-md-2">
         <a href="#">
           <div class="text-center">
-            <div role="button" class="opal fill opal-rainbow2">
+            <div role="button" class="opal fill">
               <div class="opal-solid">
                 Solid
               </div>
@@ -61,8 +61,8 @@
       <div class="col-md-2">
         <a href="#">
           <div class="text-center">
-            <div role="button" class="opal fill opal-rainbow2">
-              <div class="opal-solid opal-soften">
+            <div role="button" class="opal fill">
+              <div class="opal-soften">
                 Softened
               </div>
             </div>
@@ -72,8 +72,8 @@
       <div class="col-md-2">
         <a href="#">
           <div class="text-center">
-            <div role="button" class="opal fill opal-rainbow2">
-              <div class="opal-inner">
+            <div role="button" class="opal fill">
+              <div class="opal-framed">
                 Framed
               </div>
             </div>
@@ -89,17 +89,359 @@
         &lt;link href="./yourfilepath/opalescent.css" rel="stylesheet" type="text/css"&gt;
       </code>
     </div>
-    <h2>Classes</h2>
+    <p>To create a basic Opalescent button, follow the following formats to produce the buttons above:</p>
   </div>
-
+  <div class="container-fluid text-center">
+    <code class="text-left">
+      &lt;a href="#"&gt;
+      <br/>&nbsp;&nbsp;&lt;div class="opal"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="opal-solid"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solid
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&lt;/a&gt;
+    </code>
+    <code class="text-left">
+      &lt;a href="#"&gt;
+      <br/>&nbsp;&nbsp;&lt;div class="opal"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="opal-softened"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Softened
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&lt;/a&gt;
+    </code>
+    <code class="text-left">
+      &lt;a href="#"&gt;
+      <br/>&nbsp;&nbsp;&lt;div class="opal"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="opal-framed"&gt;
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Framed
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&nbsp;&nbsp;&lt;/div&gt;
+      <br/>&lt;/a&gt;
+    </code>
+  </div>
+  <div class="container">
+    <h2>Inner Classes</h2>
+    <table class="table">
+      <thead>
+        <th>Class</th>
+        <th>Description</th>
+        <th>Example</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>.opal-solid</th>
+          <td>Declares a default Solid button.</td>
+          <td>
+            <a href="#">
+              <div class="opal text-center">
+                <div class="opal-solid">
+                  .opal-solid
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-soften</th>
+          <td>Declares a default Softened button.</td>
+          <td>
+            <a href="#">
+              <div class="opal text-center">
+                <div class="opal-soften">
+                  .opal-soften
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-framed</th>
+          <td>Declares a default Softened button.</td>
+          <td>
+            <a href="#">
+              <div class="opal text-center">
+                <div class="opal-framed">
+                  .opal-framed
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Style Classes</h2>
+    <table class="table">
+      <thead>
+        <th>Class</th>
+        <th>Description</th>
+        <th>Example (Solid, Softened, Framed)</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>.opal</th>
+          <td>A blend of soft red and blue.
+          </td>
+          <td>
+            <a href="#">
+              <div class="opal">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-rainbow</th>
+          <td>A vibrant rainbow pattern.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-rainbow">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-rainbow-soft</th>
+          <td>A softer rainbow pattern.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-rainbow-soft">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow-soft">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow-soft">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-success</th>
+          <td>A subtle green gradient.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-success">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-success">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-success">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-bright</th>
+          <td>A mix of bright yellow, pink, and blue.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-bright">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-bright">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-bright">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-dark</th>
+          <td>A subtle gradient of black and gray.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-dark">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-dark">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-dark">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-light</th>
+          <td>A vibrant mix of bright rainbow colors.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-light">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-light">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-light">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Modifiers (Outer element)</h2>
+    <table class="table">
+      <thead>
+        <th>Class</th>
+        <th>Description</th>
+        <th>Example</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>.opal-outline</th>
+          <td>Adds a grey outline around the button.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-light opal-outline">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-light opal-outline">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-light opal-outline">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>.opal-outline</th>
+          <td>Adds gradient animation on hover.</td>
+          <td>
+            <a href="#">
+              <div class="opal opal-rainbow-soft opal-awake opal-outline">
+                <div class="opal-solid">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow-soft opal-awake opal-outline">
+                <div class="opal-soften">
+                  .opal
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="opal opal-rainbow-soft opal-awake opal-outline">
+                <div class="opal-framed">
+                  .opal
+                </div>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <a href="">
-          <div class="text-center">
-            <div class="shadow-test">
-              <div role="button" class="opal">
+        <a href="#">
+          <div class="text-center ">
+            <div class="shadow-test ">
+              <div role="button " class="opal ">
                 <div class="opal-solid">
                   Try Me
                 </div>
@@ -108,22 +450,22 @@
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center">
-            <div role="button" class="opal">
-              <div class="opal-solid opal-soften">
+      <div class="col-md-4 ">
+        <a href="#">
+          <div class="text-center ">
+            <div role="button " class="opal ">
+              <div class="opal-solid opal-soften ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 ">
         <a href="# ">
-          <div class="text-center">
-            <div role="button " class="opal">
-              <div class="opal-inner">
+          <div class="text-center ">
+            <div role="button " class="opal ">
+              <div class="opal-framed ">
                 Try Me
               </div>
             </div>
@@ -131,69 +473,34 @@
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal opal-rainbow">
-              <div class="opal-solid">
+            <div role="button " class="opal opal-rainbow ">
+              <div class="opal-solid ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal opal-rainbow">
-              <div class="opal-solid opal-soften">
+            <div role="button " class="opal opal-rainbow ">
+              <div class="opal-solid opal-soften ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal opal-rainbow">
-              <div class="opal-inner">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-rainbow2">
-              <div class="opal-solid">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-rainbow2">
-              <div class="opal-solid opal-soften">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-rainbow2">
-              <div class="opal-inner">
+            <div role="button " class="opal opal-rainbow ">
+              <div class="opal-framed ">
                 Try Me
               </div>
             </div>
@@ -201,69 +508,34 @@
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal active">
-              <div class="opal-solid">
+            <div role="button " class="opal opal-rainbow-soft ">
+              <div class="opal-solid ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal active">
-              <div class="opal-solid opal-soften">
+            <div role="button " class="opal opal-rainbow-soft ">
+              <div class="opal-solid opal-soften ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href="#">
           <div class="text-center ">
-            <div role="button" class="opal active">
-              <div class="opal-inner">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-bright">
-              <div class="opal-solid">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-bright">
-              <div class="opal-solid opal-soften">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-bright">
-              <div class="opal-inner">
+            <div role="button " class="opal opal-rainbow-soft ">
+              <div class="opal-framed ">
                 Try Me
               </div>
             </div>
@@ -271,69 +543,34 @@
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-dark">
-              <div class="opal-solid">
+            <div role="button " class="opal opal-success">
+              <div class="opal-solid ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-dark">
-              <div class="opal-solid opal-soften">
+            <div role="button " class="opal opal-success">
+              <div class="opal-solid opal-soften ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-dark">
-              <div class="opal-inner">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-light">
-              <div class="opal-solid">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-light">
-              <div class="opal-solid opal-soften">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
-          <div class="text-center ">
-            <div role="button" class="opal opal-light">
-              <div class="opal-inner">
+            <div role="button " class="opal opal-success">
+              <div class="opal-framed ">
                 Try Me
               </div>
             </div>
@@ -341,34 +578,139 @@
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="">
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-awake opal-light opal-outline">
-              <div class="opal-solid">
+            <div role="button " class="opal opal-bright ">
+              <div class="opal-solid ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-awake opal-light opal-outline">
-              <div class="opal-solid opal-soften">
+            <div role="button " class="opal opal-bright ">
+              <div class="opal-solid opal-soften ">
                 Try Me
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md-4">
-        <a href="">
+      <div class="col-md-4 ">
+        <a href=" ">
           <div class="text-center ">
-            <div role="button" class="opal opal-awake opal-light opal-outline">
-              <div class="opal-inner">
+            <div role="button " class="opal opal-bright ">
+              <div class="opal-framed ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-dark ">
+              <div class="opal-solid ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-dark ">
+              <div class="opal-solid opal-soften ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-dark ">
+              <div class="opal-framed ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-light ">
+              <div class="opal-solid ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-light ">
+              <div class="opal-solid opal-soften ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-light ">
+              <div class="opal-framed ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-awake opal-light opal-outline ">
+              <div class="opal-solid ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-awake opal-light opal-outline ">
+              <div class="opal-solid opal-soften ">
+                Try Me
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 ">
+        <a href=" ">
+          <div class="text-center ">
+            <div role="button " class="opal opal-awake opal-rainbow opal-outline ">
+              <div class="opal-framed ">
                 Try Me
               </div>
             </div>

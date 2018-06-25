@@ -26,6 +26,11 @@ code {
   margin: 30px;
 }
 
+table {
+  /* text-align: left; */
+  /* display: inline-block; */
+}
+
 .fill {
   width: 100%;
   text-align: center;
@@ -51,6 +56,11 @@ p {
 
 h2 {
   font-weight: 700 !important;
+}
+
+.text-left {
+  width: 420px;
+  margin: 10px;
 }
 
 .shadow-test {
