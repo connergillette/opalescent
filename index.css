@@ -1,32 +1,56 @@
-.container {
-  margin-top: 100px;
+* {
+  font-family: "Catamaran", sans-serif;
 }
 
-.row {
-  padding-bottom: 60px;
+.container {
+  margin-top: 50px;
+}
+
+.button-row {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container-fluid {
+  padding: 0px !important;
+  position: relative !important;
+}
+
+code {
+  font-size: 20px !important;
+  text-align: center !important;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  border: rgba(128, 128, 128, 0.411) 2px solid;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.fill {
+  width: 100%;
+  text-align: center;
+}
+
+.opal-header .container {
+  margin-top: 35px;
+}
+
+a {
+  color: #ffffffb0 !important;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-  text-decoration: none;
-  opacity: 0;
-  box-shadow: none;
+  color: white !important;
 }
 
-.opal {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  height: 40px;
-  min-width: 80px;
-  max-width: 200px;
-  color: #ffffff;
-  font-size: 18px;
-  border-radius: 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  opacity: 1;
-  /* -webkit-transition: opacity .3s;
-  transition: opacity .3s; */
+p {
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: 700 !important;
 }
 
 .shadow-test {
@@ -62,209 +86,4 @@ a:hover {
 
 .shadow-test:hover::after {
   opacity: 1;
-}
-
-.opal-solid {
-  padding-top: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.opal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 400px;
-  height: 400px;
-  left: -50px;
-  top: -200px;
-  background: linear-gradient(135deg, #ff0000b0 19%, #0000ff80 80%, #00a2ff50 90%) no-repeat;
-  
-  -webkit-animation: pan360 5s infinite, sway 8s infinite;
-  animation: pan360 5s infinite, sway 8s infinite;
-  animation-timing-function: linear;
-  /* background-color: none; */
-  /* -webkit-transition: opacity .3s;
-  transition: opacity .3s; */
-}
-
-.opal-light {
-  color: rgb(24, 24, 24);
-}
-
-.opal-outline {
-  border-color: rgb(167, 167, 167);
-  border-style: solid;
-}
-
-.opal-rainbow:before {
-  background: linear-gradient(to bottom right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 19%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%), 
-    linear-gradient(to top right, rgba(255, 255, 0, .85) 10%, rgba(255, 0, 0, .75), rgba(0, 255, 0, .75) 25%, rgba(0,0,255,.65) 40%, rgba(255, 0, 0, .65), rgba(255, 255, 0, .85) 80%);
-  /* animation: pan360 10s infinite, sway 8s infinite;
-  animation-direction: normal;
-  animation-timing-function: linear; */
-}
-
-.opal-rainbow2:before {
-  background: linear-gradient(to top right, rgb(255, 102, 0), rgba(255, 0, 0, 0.733), rgba(192, 26, 192, 0.984), rgba(50, 0, 205, 0.449), 
-  teal,green,rgba(0,0,255, .5)), linear-gradient(to bottom right, orange, rgba(0,0,255,.6), yellow);
-    /* linear-gradient(to top right, ); */
-}
-
-.opal-bright:before {
-  background: linear-gradient(to bottom right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0)), linear-gradient(to top right, rgba(0, 255, 255, 0.719),rgba(255, 0, 255, 0.719), rgb(255, 255, 0));
-}  
-
-.opal-dark:before {
-  background: linear-gradient(to bottom right, black, rgb(43, 0, 43), rgb(49, 49, 49), black);
-}
-
-.opal-light:before {
-  background: linear-gradient(to bottom right, rgb(255, 189, 65), rgb(255, 255, 41), rgb(90, 255, 255), rgb(255, 134, 154));
-}
-
-.opal-awake:before {
-  background: linear-gradient(to bottom right, rgb(255, 189, 65), rgb(255, 255, 41), rgb(90, 255, 255), rgb(255, 134, 154));
-  opacity: 0;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-}
-
-.opal-awake:hover:before {
-  opacity: 1;
-}
-
-.opal-inner {
-  margin: 2px;
-  height: calc(100% - 4px);
-  width: calc(100% - 4px);
-  border-radius: 3px;
-  background-color: #ffffff50;
-  padding-top: 2px;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
-}
-
-.opal-soften {
-  height: 100%;
-  width: 100%;
-  /* padding-left: 20px;
-  padding-right: 20px; */
-  background-color: #ffffff50;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
-}
-
-
-.opal:hover:before {
-  /* opacity: .5; */
-  -webkit-animation: pan360 2s infinite;
-  animation: pan360 2s infinite;
-  animation-timing-function: linear;
-}
-
-.opal .opal-soften:hover {
-  background-color: transparent;
-}
-
-.opal .opal-inner:hover {
-  background-color: transparent;
-}
-
-.opal-rainbow:hover:before {
-  -webkit-animation: pan360 2s infinite;
-  animation: pan360 2s infinite;
-  animation-timing-function: cubic-bezier(.7, 0.84, .9, .75);
-}
-
-a:hover {
-  text-decoration: none !important;
-}
-
-.active:before {
-  /* opacity: .5; */
-  /* background: green; */
-
-  background: linear-gradient(30deg, rgba(50, 205, 50, 0.747),rgba(0, 128, 0, 0.788), rgb(0, 87, 0));
-  -webkit-animation: sway 3s infinite, pan360 3s infinite;
-  animation: sway 3s infinite, pan360 3s infinite;
-  /* animation-direction: alternate; */
-  animation-timing-function: linear;
-}
-
-.active:hover:before {
-  -webkit-animation: success 1s infinite;
-  animation: success 1s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes pan {
-  to {
-    transform: rotate(90deg);
-  }
-}
-
-@keyframes pan360 {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes sway {
-  from {
-    top: -200px;
-    left: -50px;
-  }
-  to {
-    top: -300px;
-    left: -100px;
-  }
-  to {
-    top: -200px;
-    left: -50px;
-  }
-}
-
-@keyframes success {
-  to {
-    transform: rotate(60deg);
-  }
-}
-
-@keyframes settle {
-  
-}
-
-@keyframes toActive {
-  from {
-    background: green;
-    opacity: .5;
-  }
-  to {
-    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
-    linear-gradient(90deg, black, green 80%, black 80%, green);
-    opacity: 1;
-  }
-}
-
-@keyframes color-fade-out {
-  from {
-    background: linear-gradient(135deg, #ff000050 19%, #0000ff80 50%, #ff000050),
-    linear-gradient(90deg, orange, red, yellow);
-    opacity: 100%;
-  }
-  to {
-    opacity: 20%;
-  }
-}
-
-@keyframes color-fade-in {
-  from {
-    background: linear-gradient(0deg, #0a8b0620 19%, #0bca0530 50%, #00ff0d9c),
-    linear-gradient(90deg, black, green 80%, black 80%, green);
-    opacity: 20%;
-  }
-  to {
-    opacity: 100%;
-  }
 }
