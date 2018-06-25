@@ -31,6 +31,7 @@
   border-radius: 0px;
   /* color: #ffffffb0; */
   color: white;
+  text-align: left;
 }
 
 a {
@@ -59,10 +60,6 @@ a {
   -webkit-animation: pan360 5s infinite, sway 8s infinite;
   animation: pan360 5s infinite, sway 8s infinite;
   animation-timing-function: linear;
-}
-
-.opal-clear:before {
-  background: #ffffff2a;
 }
 
 .opal-header:before {
@@ -204,6 +201,11 @@ a {
   color: black;
   -webkit-transition: border-color .3s;
   transition: border-color .3s;
+}
+
+.opal-clear:before {
+  margin-bottom: 0px;
+  background: #ffffff2a;
 }
 
 @keyframes pan {

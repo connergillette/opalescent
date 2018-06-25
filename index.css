@@ -3,12 +3,12 @@
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .button-row {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .container-fluid {
@@ -26,11 +26,6 @@ code {
   margin: 30px;
 }
 
-table {
-  /* text-align: left; */
-  /* display: inline-block; */
-}
-
 .fill {
   width: 100%;
   text-align: center;
@@ -38,6 +33,10 @@ table {
 
 .opal-header .container {
   margin-top: 35px;
+}
+
+.opal-clear {
+  width: 150px;
 }
 
 a {
@@ -48,14 +47,28 @@ a {
 
 a:hover {
   color: white !important;
+  text-decoration: none;
 }
 
 p {
   font-size: 24px;
 }
 
+p.clear-text {
+  color: #ffffffb0;
+  margin-top: -20px;
+  font-size: 16px;
+}
+
 h2 {
   font-weight: 700 !important;
+  padding-top: 30px;
+}
+
+td.opal-header {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
 
 .text-left {
