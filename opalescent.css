@@ -1,6 +1,14 @@
+/* General Properties */
+
+a {
+  text-decoration: none;
+}
+
 .isolate {
   margin: 30px;
 }
+
+/* Outer Element Properties */
 
 .opal,
 .opal-header {
@@ -23,31 +31,6 @@
   color: white;
 }
 
-.opal-header {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  min-height: 200px;
-  border-radius: 0px;
-  /* color: #ffffffb0; */
-  color: white;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-}
-
-.opal-header h1 {
-  font-size: 70px;
-}
-
-.opal-solid {
-  padding-top: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .opal:before {
   content: "";
   position: absolute;
@@ -62,12 +45,27 @@ a {
   animation-timing-function: linear;
 }
 
+.opal-header {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  border-radius: 0px;
+  /* color: #ffffffb0; */
+  color: white;
+  text-align: left;
+}
+
+.opal-header h1 {
+  font-size: 70px;
+}
+
 .opal-header:before {
   content: "";
   position: absolute;
   z-index: -1;
-  min-width: 1200px;
-  min-height: 1200px;
+  min-width: 600px;
+  min-height: 600px;
   width: 130vw;
   height: 130vw;
   top: -50vw;
@@ -91,6 +89,8 @@ a {
   animation: pan360 5s infinite, headerSway 8s infinite ease-in-out;
   animation-timing-function: linear;
 }
+
+/* Color Gradient Presets */
 
 .opal-light,
 .opal-light:hover {
@@ -133,17 +133,12 @@ a {
   opacity: .9;
 }
 
-.opal-framed {
-  margin: 2px;
-  height: calc(100% - 4px);
-  width: calc(100% - 4px);
-  border-radius: 3px;
-  background-color: #ffffff50;
-  padding-top: 5px;
+/* Inner Element Properties */
+
+.opal-solid {
+  padding-top: 7px;
   padding-left: 10px;
   padding-right: 10px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .opal-soften {
@@ -157,15 +152,23 @@ a {
   padding-right: 10px;
 }
 
+.opal-framed {
+  margin: 2px;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  border-radius: 3px;
+  background-color: #ffffff50;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
 .opal:hover:before {
   -webkit-animation: pan360 2s infinite;
   animation: pan360 2s infinite;
   animation-timing-function: linear;
-}
-
-.opal:active:before {
-  -webkit-animation: pan 1s ease-in-out;
-  animation: pan 1s ease-in-out;
 }
 
 .opal .opal-soften:hover {
@@ -207,6 +210,8 @@ a {
   margin-bottom: 0px;
   background: #ffffff2a;
 }
+
+/* Animations */
 
 @keyframes pan {
   to {

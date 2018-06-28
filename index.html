@@ -5,7 +5,7 @@
   <title>Opalescent - Colorful Animated Buttons</title>
   <meta charset="UTF-8">
   <meta name="description" content="Colorful, animated, and customizable CSS buttons to make important actions pop.">
-  <meta name="keywords" content="CSS,button,html,animated,colorful">
+  <meta name="keywords" content="CSS,button,html,animated,colorful,package,library">
   <meta name="author" content="Conner Gillette">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="opalescent.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700|Oxygen:400,700" rel="stylesheet">
 </head>
 
@@ -22,14 +21,14 @@
     <div class="opal-header opal-rainbow-soft">
       <div class="container">
         <div class="row">
-          <div class="col-md-9 col-sm-8">
+          <div class="col-xs-12 col-md-9">
             <h1>Opalescent CSS</h1>
             <h3>
               <a id="white-link" href="http://cwgillette.com" target="_blank">By Conner Gillette</a>
             </h3>
           </div>
-          <div class="col-md-3 col-sm-4 text-center">
-            <a href="index.css" download>
+          <div class="col-xs-12 col-md-3 text-center">
+            <a href="opalescent.css" download>
               <div class="opal opal-clear isolate" role="button">
                 <div class="opal-solid opal-soften">
                   Download CSS
@@ -46,10 +45,11 @@
     <h2>Beautiful, colorful, eye-catching CSS buttons.</h2>
     <p>
       Opalescent offers styles for animated gradient buttons in a variety of colors and styles using vanilla CSS. They are easily
-      customizable to reflect your brand's colors, motion curves, and shapes.
+      customizable to reflect your brand's colors, motion curves, and shapes. Use them sparingly to make high-importance
+      actions pop.
     </p>
     <div class="row button-row">
-      <div class="offset-md-3 col-md-2">
+      <div class="col-4 offset-md-3 col-md-2">
         <a href="#">
           <div class="text-center">
             <div role="button" class="opal fill">
@@ -60,7 +60,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col-4 col-md-2">
         <a href="#">
           <div class="text-center">
             <div role="button" class="opal fill">
@@ -71,7 +71,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-2">
+      <div class="col-4 col-md-2">
         <a href="#">
           <div class="text-center">
             <div role="button" class="opal fill">
@@ -87,28 +87,28 @@
     <p>After downloading the CSS file using the button at the top of the page, move or copy it into your project directory.
       Then, link the file to your HTML page like so:</p>
     <div class="text-center">
-      <code>
+      <code class="text-left line">
         &lt;link href="./yourfilepath/opalescent.css" rel="stylesheet" type="text/css"&gt;
       </code>
     </div>
-    <p>To create a basic Opalescent button, follow the following formats to produce the buttons above:</p>
+    <p>To create a basic Opalescent button, use the following formats to produce the buttons above:</p>
   </div>
   <div class="container-fluid text-center">
-    <code class="text-left">
+    <code class="text-left block">
       &lt;div class="opal"&gt;
       <br/>&nbsp;&nbsp;&lt;div class="opal-solid"&gt;
       <br/>&nbsp;&nbsp;&nbsp;&nbsp;Solid
       <br/>&nbsp;&nbsp;&lt;/div&gt;
       <br/>&lt;/div&gt;
     </code>
-    <code class="text-left">
+    <code class="text-left block">
       &lt;div class="opal"&gt;
       <br/>&nbsp;&nbsp;&lt;div class="opal-soften"&gt;
       <br/>&nbsp;&nbsp;&nbsp;&nbsp;Softened
       <br/>&nbsp;&nbsp;&lt;/div&gt;
       <br/>&lt;/div&gt;
     </code>
-    <code class="text-left">
+    <code class="text-left block">
       &lt;div class="opal"&gt;
       <br/>&nbsp;&nbsp;&lt;div class="opal-framed"&gt;
       <br/>&nbsp;&nbsp;&nbsp;&nbsp;Framed
@@ -132,8 +132,8 @@
       <strong>outer element</strong> with a
       <strong>style class</strong> (see below) to change functionality of the button.
     </p>
-    <h2>Inner Classes</h2>
     <table class="table">
+      <h2>Inner Classes</h2>
       <thead>
         <th>Class</th>
         <th>Description</th>
@@ -182,234 +182,236 @@
       </tbody>
     </table>
     <h2>Style Classes</h2>
-    <table class="table">
-      <thead>
-        <th>Class</th>
-        <th>Description</th>
-        <th>Example (Solid, Softened, Framed)</th>
-      </thead>
-      <tbody>
-        <tr>
-          <th>.opal</th>
-          <td>A blend of soft red and blue.
-          </td>
-          <td>
-            <a href="#">
-              <div class="opal">
-                <div class="opal-solid">
-                  .opal
+    <div class="table-responsive-sm">
+      <table class="table">
+        <thead>
+          <th>Class</th>
+          <th>Description</th>
+          <th class="align-adjust">Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>.opal</th>
+            <td>A blend of soft red and blue.
+            </td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-rainbow</th>
-          <td>A vibrant rainbow pattern.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-rainbow">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-rainbow</th>
+            <td>A vibrant rainbow pattern.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-rainbow">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-rainbow">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-rainbow">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-rainbow">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-rainbow">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-rainbow-soft</th>
-          <td>A softer rainbow pattern.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-rainbow-soft">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-rainbow-soft</th>
+            <td>A softer rainbow pattern.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-rainbow-soft">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-rainbow-soft">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-rainbow-soft">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-rainbow-soft">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-rainbow-soft">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-success</th>
-          <td>A subtle green gradient.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-success">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-success</th>
+            <td>A subtle green gradient.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-success">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-success">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-success">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-success">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-success">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-bright</th>
-          <td>A mix of bright yellow, pink, and blue.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-bright">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-bright</th>
+            <td>A mix of bright yellow, pink, and blue.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-bright">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-bright">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-bright">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-bright">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-bright">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-dark</th>
-          <td>A subtle gradient of black and gray.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-dark">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-dark</th>
+            <td>A subtle gradient of black and gray.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-dark">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-dark">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-dark">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-dark">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-dark">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-light</th>
-          <td>A vibrant mix of bright rainbow colors.</td>
-          <td>
-            <a href="#">
-              <div class="opal opal-light">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-light</th>
+            <td>A vibrant mix of bright rainbow colors.</td>
+            <td class="align-adjust">
+              <a href="#">
+                <div class="opal opal-light">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-light">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-light">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-light">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-light">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <th>.opal-clear</th>
-          <td>A transparent button that works best on an animated gradient header.</td>
-          <td>
-            <!-- <div class="opal-header"> -->
-            <a href="#">
-              <div class="opal opal-clear">
-                <div class="opal-solid">
-                  .opal
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <th>.opal-clear</th>
+            <td>A transparent button that works best on an animated gradient header.</td>
+            <td class="align-adjust">
+              <!-- <div class="opal-header"> -->
+              <a href="#">
+                <div class="opal opal-clear">
+                  <div class="opal-solid">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-clear">
-                <div class="opal-soften">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-clear">
+                  <div class="opal-soften">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="opal opal-clear">
-                <div class="opal-framed">
-                  .opal
+              </a>
+              <a href="#">
+                <div class="opal opal-clear">
+                  <div class="opal-framed">
+                    .opal
+                  </div>
                 </div>
-              </div>
-            </a>
-            <!-- </div> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              </a>
+              <!-- </div> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <h2>Modifiers (Outer element)</h2>
     <table class="table">
       <thead>
@@ -474,290 +476,68 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <!-- <div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <a href="#">
-        <div class="text-center ">
-          <div class="shadow-test ">
-            <div role="button " class="opal ">
-              <div class="opal-solid">
-                Try Me
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+    <h2>Customizing color gradients</h2>
+    <p>
+      Opalescent uses the
+      <code class="inline">linear-gradient</code> property for generating the button backgrounds. Here is an example of the color gradient for
+      the default
+      <code class="inline">.opal</code> color.
+    </p>
+
+    <div class="text-center">
+      <code class="line">linear-gradient(135deg, #ff0000b0 19%, #0000ff80 80%, #00a2ff50 90%) no-repeat;</code>
     </div>
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
+
+    <p>
+      To apply this color to a button, add the
+      <code class="inline">linear-gradient</code> value above as the
+      <code class="inline">background</code> of the
+      <code class="inline">:before</code> pseudo-element of your new class, like so:
+    </p>
+
+    <div class="text-center">
+      <code class="line text-left">
+        .opal-newcolor:before {
+        <br />&nbsp;&nbsp;linear-gradient(135deg, #ff0000b0 19%, #0000ff80 80%, #00a2ff50 90%) no-repeat;
+        <br />}
+      </code>
     </div>
-    <div class="col-md-4 ">
-      <a href="# ">
-        <div class="text-center ">
-          <div role="button " class="opal ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
+
+    <p>
+      Then, add your new class as a
+      <strong>style class</strong> to your
+      <strong>outer element</strong>, like so:
+    </p>
+
+    <div class="text-center">
+      <code class="line text-left">
+        &lt;div class="opal opal-newcolor"&gt;
+        <br/>&nbsp;&nbsp;&lt;div class="opal-soften"&gt;
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;New Color
+        <br/>&nbsp;&nbsp;&lt;/div&gt;
+        <br/>&lt;/div&gt;
+      </code>
     </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
+
+    <h2>Customizing gradient animation</h2>
+    <p>These buttons use a basic
+      <code class="inline">transform: rotate(360deg)</code> animation running at 5 seconds at default and 2 seconds on hover. To introduce some
+      variation, this animation is partnered with another animation that moves the background back and forth at a fixed interval
+      (8 seconds). These animations are applied to the
+      <code class="inline">:before</code> pseudo-element along with the
+      <code class="inline">background</code> property.
+    </p>
+
+    <h3 class="text-center">I'd love to see what customizations you make. Feel free to
+      <a href="https://twitter.com/connerwgillette">tweet them at me!</a>
+    </h3>
+
+    <div class="text-center">
+      <a href="https://github.com/connergillette/opalescent" target="_blank">
+        <img src="assets/GitHub-Mark-64px.png" class="social" />
       </a>
     </div>
   </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow-soft ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow-soft ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href="#">
-        <div class="text-center ">
-          <div role="button " class="opal opal-rainbow-soft ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-success">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-success">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-success">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-bright ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-bright ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-bright ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-dark ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-dark ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-dark ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-light ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-light ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-light ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row ">
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-awake opal-light opal-outline ">
-            <div class="opal-solid ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-awake opal-light opal-outline ">
-            <div class="opal-solid opal-soften ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 ">
-      <a href=" ">
-        <div class="text-center ">
-          <div role="button " class="opal opal-awake opal-rainbow opal-outline ">
-            <div class="opal-framed ">
-              Try Me
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>-->
 </body>
 
 </html>
