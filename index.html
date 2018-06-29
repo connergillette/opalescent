@@ -9,6 +9,7 @@
   <meta name="author" content="Conner Gillette">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="index.css" type="text/css">
   <link rel="stylesheet" href="opalescent.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -382,31 +383,34 @@
           </tr>
           <tr>
             <th>.opal-clear</th>
-            <td>A transparent button that works best on an animated gradient header.</td>
+            <td>A transparent button that works best on an animated gradient header like
+              <code class="inline">.opal-header</code>.</td>
             <td class="align-adjust">
-              <!-- <div class="opal-header"> -->
-              <a href="#">
-                <div class="opal opal-clear">
-                  <div class="opal-solid">
-                    .opal
-                  </div>
+              <div class="opal opal-header opal-rainbow-soft">
+                <div class="opal-solid">
+                  <a href="#">
+                    <div class="opal opal-clear">
+                      <div class="opal-solid">
+                        .opal
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="opal opal-clear">
+                      <div class="opal-soften">
+                        .opal
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="opal opal-clear">
+                      <div class="opal-framed">
+                        .opal
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <a href="#">
-                <div class="opal opal-clear">
-                  <div class="opal-soften">
-                    .opal
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="opal opal-clear">
-                  <div class="opal-framed">
-                    .opal
-                  </div>
-                </div>
-              </a>
-              <!-- </div> -->
+              </div>
             </td>
           </tr>
         </tbody>
@@ -474,6 +478,13 @@
             </a>
           </td>
         </tr>
+        <tr>
+          <th>.opal-header</th>
+          <td>Enables animated color gradient effect on larger elements.</td>
+          <td>
+            <div class="opal opal-header opal-bright"></div>
+          </td>
+        </tr>
       </tbody>
     </table>
     <h2>Customizing color gradients</h2>
@@ -527,6 +538,17 @@
       <code class="inline">:before</code> pseudo-element along with the
       <code class="inline">background</code> property.
     </p>
+
+    <h2>Customizing shapes</h2>
+    <p>
+      With some customization, the animated gradient effect can be applied to a container of any shape and size, as demonstrated
+      by the header of this site. The main properties that usually need tweaking include the
+      <code class="inline">:before</code> pseudo-element (specifically, the size and position) and the degree of the
+      <code class="inline">sway</code> animation. I've included the
+      <code class="inline">.opal-header</code> class featured in this site's as a starting point for creating larger Opalescent elements, but
+      your mileage may vary.
+    </p>
+    <p>Luckily, since this project uses stock CSS, it can be easily tweaked to fit the needs of any project. Enjoy!</p>
 
     <h3 class="text-center">I'd love to see what customizations you make. Feel free to
       <a href="https://twitter.com/connerwgillette">tweet them at me!</a>

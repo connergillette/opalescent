@@ -72,7 +72,7 @@ code.inline {
   transition: color 0.3s ease-in-out;
 }
 
-.opal-header a:hover {
+a:hover {
   color: white !important;
   text-decoration: none !important;
 }
@@ -107,10 +107,27 @@ h3.text-center {
   padding-top: 30px;
 }
 
-td.opal-header {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+td .opal-header {
+  max-width: 270px !important;
+  min-height: 55px !important;
+  height: auto;
+  margin-bottom: 100px;
+  overflow: hidden;
+  border-radius: 5px;
+  word-wrap: none;
+}
+
+td .opal-header .opal {
+  width: 80px;
+}
+
+.opal-header.opal-bright {
+  min-height: 150px !important;
+  max-width: 90% !important;
+}
+
+td code.inline {
+  font-size: 14px !important;
 }
 
 th {
@@ -133,41 +150,6 @@ th {
 
 .social:hover {
   opacity: .5;
-}
-
-.shadow-test {
-  position: relative;
-  display: inline-block;
-  background-color: transparent;
-  border-radius: 5px;
-  box-shadow: none;
-  border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.shadow-test::after {
-  content: "";
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.shadow-test:hover {
-  -webkit-transform: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
-}
-
-.shadow-test:hover::after {
-  opacity: 1;
 }
 
 @media screen and (max-width: 500px) {
