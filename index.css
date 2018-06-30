@@ -174,3 +174,10 @@ th {
   }
   table .opal {}
 }
+
+@media screen and (max-width: 320px) {
+  .opal-header {
+    min-height: 275px !important;
+    height: 275px !important;
+  }
+}
