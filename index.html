@@ -30,7 +30,12 @@
 
   function gaClick() {
     console.log("(gaClick) Registering download...");
-    ga('send', 'event', 'Download', 'click', 'v1.0.0');
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Download',
+      eventAction: 'click',
+      eventLabel: '1.0.0'
+    });
   }
 </script>
 
