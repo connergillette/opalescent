@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="opalescent.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700|Oxygen:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:400,700" rel="stylesheet">
 </head>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121620203-1"></script>
@@ -27,16 +27,6 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-121620203-1');
-
-  function gaClick() {
-    console.log("(gaClick) Registering download...");
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Download',
-      eventAction: 'click',
-      eventLabel: '1.0.0'
-    });
-  }
 </script>
 
 <body>
@@ -52,7 +42,7 @@
           </div>
           <div class="col-xs-12 col-md-3 text-center">
             <a href="opalescent.css" download>
-              <div class="opal opal-clear isolate" role="button" onclick="gaClick()">
+              <div class="opal opal-clear isolate" role="button" onclick="ga('send', {hitType: 'event',eventCategory: 'Download', eventAction: 'click', eventLabel: '1.0.0'});">
                 <div class="opal-solid opal-soften">
                   Download CSS
                 </div>
