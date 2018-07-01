@@ -30,13 +30,17 @@
 </script>
 
 <script>
+  // function trackDownload() {
+  //   ga('send', {
+  //     hitType: 'event',
+  //     eventCategory: 'Download',
+  //     eventAction: 'click',
+  //     eventLabel: '1.0.0'
+  //   });
+  // }
   function trackDownload() {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Download',
-      eventAction: 'click',
-      eventLabel: '1.0.0'
-    });
+    xhttp.open('POST', 'http://quantum-analytics.herokuapp.com', true);
+    xhttp.send();
   }
 </script>
 
