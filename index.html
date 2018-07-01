@@ -27,6 +27,11 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-121620203-1');
+
+  function gaClick() {
+    console.log("(gaClick) Registering download...");
+    ga('send', 'event', 'Download', 'click', 'v1.0.0');
+  }
 </script>
 
 <body>
@@ -42,7 +47,7 @@
           </div>
           <div class="col-xs-12 col-md-3 text-center">
             <a href="opalescent.css" download>
-              <div class="opal opal-clear isolate" role="button" onclick="ga('send', 'event', 'Download', 'click', 'v1.0.0');">
+              <div class="opal opal-clear isolate" role="button" onclick="gaClick()">
                 <div class="opal-solid opal-soften">
                   Download CSS
                 </div>
