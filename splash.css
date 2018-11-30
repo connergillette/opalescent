@@ -1,0 +1,45 @@
+h1 {
+  font-size: 170px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  padding-top: 80px;
+}
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.opal {
+  height: 100px;
+  min-width: 80% !important;
+  font-size: 50px;
+  border-radius: 10px;
+  /* margin-top: 30%; */
+}
+
+.opal:before {
+  height: 700px;
+  width: 700px;
+  /* left: 500px !important;
+  top: -500px !important; */
+}
+
+.opal-framed {
+  margin: 8px !important;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  border-radius: 7px;
+  padding: 0px;
+}
+
+.opal-rainbow:before {
+  height: 600px;
+  width: 600px;
+}

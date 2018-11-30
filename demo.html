@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="opalescent.css" type="text/css">
+  <link rel="stylesheet" href="demo.css" type="text/css">
+</head>
+
+<body>
+  <div class="container-fluid header">
+    <div class="container">
+      <h1>Choose an option.</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-grid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <a href="#"> -->
+              <div class="card text-center" onclick="displayInfo(1)">Option 1</div>
+              <!-- </a> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <a href="#"> -->
+              <div class="card text-center" onclick="displayInfo(2)">Option 2</div>
+              <!-- </a> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <a href="#"> -->
+              <div class="card text-center" onclick="displayInfo(3)">Option 3</div>
+              <!-- </a> -->
+            </div>
+            <div class="col-md-6">
+              <!-- <a href="#"> -->
+              <div class="card text-center" onclick="displayInfo(4)">Option 4</div>
+              <!-- </a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 detail-container">
+          <div class="container">
+            <div id="detail" class="detail">
+              <h2 id="option-name">Option</h2>
+              <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+              </p>
+              <h3 class="text-center">$49</h3>
+              <div class="text-center btn-confirm">
+                <a href="#">
+                  <div class="opal opal-rainbow-soft">
+                    <div class="opal-soften">
+                      Confirm Choice
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <p class="text-center">
+    <a href="https://www.opalescent-css.com">Opalescent CSS</a> -
+    <a href="http://cwgillette.com">Conner Gillette</a>
+  </p>
+</footer>
+<script type="text/javascript">
+  function displayInfo(option) {
+    document.getElementById('detail').classList.add('show');
+    document.getElementById('option-name').innerHTML = 'Option ' + option;
+  }
+</script>
+
+</html>

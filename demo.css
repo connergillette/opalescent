@@ -1,0 +1,97 @@
+.header {
+  height: 150px;
+  background-color: gray;
+}
+
+h1 {
+  color: white;
+  font-size: 125px;
+  /* padding-top: 10px; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+a:hover {
+  color: slateblue;
+}
+
+.card-grid {
+  padding-top: 20px;
+}
+
+.detail-container {
+  border: 1px silver solid;
+  width: 100%;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.detail {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.detail h2 {
+  font-size: 50px;
+}
+
+.detail p {
+  font-size: 25px;
+}
+
+.detail h3 {
+  padding-top: 40px;
+  /* font-weight: bold; */
+}
+
+.show {
+  opacity: 1;
+}
+
+.card {
+  border: 1px silver solid;
+  border-radius: 4px;
+  height: 200px;
+  padding-top: 20%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 0 white;
+  -webkit-transition: box-shadow .5s;
+  transition: .5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 6px -6px silver;
+  cursor: pointer;
+}
+
+.btn-confirm {
+  padding-top: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  color: silver;
+}
+
+footer a {
+  color: inherit;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+footer p {
+  text-align: center;
+}
